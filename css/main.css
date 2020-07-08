@@ -1,0 +1,560 @@
+/* SPECIFICATION */
+
+body {
+    font-family:'Open Sans', sans-serif;
+    color: #6c7279; 
+    padding: 0px;
+    margin: 0px;
+    font-size: 14px;
+    letter-spacing: 0em;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.jcsb {
+    justify-content: space-between;
+}
+
+.jcc {
+    justify-content: center;
+}
+
+.jcsa {
+    justify-content: space-around;
+}
+
+.aic {
+    align-items: center;
+}
+
+div, p, form, input, a, span, button, ul, li {
+    box-sizing: border-box;
+    font-family:'Open Sans', sans-serif;
+    color: #000;
+}
+
+.container-fluid_plain {
+   padding-right: 0;
+   padding-left: 0;
+}
+
+p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+ul, li {
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    padding: 0;
+    margin: 0;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 45px;
+
+}
+
+h2 {
+    font-size: 28px;
+
+}
+
+h3 {
+    font-size: 22px;
+    color: #888886;
+}
+
+h4 {
+    font-size: 14px;    
+}
+
+.row > div {
+
+}
+
+/* HEADER */
+
+.header {
+   background: #6c7279 url(../img/City.jpg) left center;
+   padding-top: 27px;
+   padding-bottom: 250px;
+   color: #ffffff;
+}
+
+
+.logo__link {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+.logo__link:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.logo__active {
+    color: #ff0000;
+    font-weight: bold;
+}
+
+.menu {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.capital  {
+    height: 23px;
+    width: 19px;
+    margin-bottom: 5px;
+}
+
+.menu__link {
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.menu__link:hover {
+    text-decoration: none;
+    color: #ff0000;
+}
+
+.border-bottom {
+    display: block;
+    text-align: right;
+    border-bottom: 2px dotted #333;
+    color: #333;
+}
+
+.menu__strip {
+    border: 1px solid #9393934b;
+    margin-top: 30px;
+}
+
+.offer__title {
+    margin-top: 181px;
+    margin-bottom: 30px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.offer__text {
+    color: #ffffff;
+    font-size: 22px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+.button {
+    text-transform: uppercase;
+    background: #e84545;
+    border-color: #e84545;
+    border: 1px solid transparent;
+    padding: 0.75rem 2.75rem;
+    font-weight: bold;
+    transition: all .3s;
+    color: #fff;
+    display: block;
+    width: 210px;
+    text-align: center;
+}
+
+.button:active, button:focus {
+    outline: none;
+    color: #fff;
+    background-color: #bd2130;
+    border-color: #b21f2d;
+    box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.5);
+}
+
+.button:hover {
+    background-color: #751919;
+}
+
+
+/* Second section */
+
+.features-block {
+    padding-top: 122px;
+    padding-bottom: 122px;
+}
+
+.features-next {
+    margin-top: 72px;
+}
+
+.features__item {
+    flex-direction: column;
+    text-align: center;
+}
+
+.features__item:nth-child(n+4) {
+    margin-top: 73px;
+}
+
+.features__img {
+    margin-bottom: 31px;
+}
+
+.features__title {
+    margin-bottom: 18px;
+}
+
+.features__text {
+    width: 100%;
+}
+
+/* Third section */
+
+.gallery-block {
+    padding-bottom: 135px;
+}
+
+.gallery__slider {
+    z-index: 100;
+    display: block;
+}
+
+.gallery__slider_i {
+    display: none;
+}
+
+
+.gallery__item {
+    position: relative;
+}
+
+.gallery__item:hover .shadow {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+.gallery__img {
+    width: 100%;
+    outline: none;
+}
+
+.gallery__name {
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+}
+
+.gallery__rank {
+    text-align: center; 
+}
+
+.shadow {
+    background: rgba(187, 27, 27, 0.849);
+    color: #fff;
+    position: absolute;
+    top: 9%;
+    left: 16%;
+    width: 68%;
+    height: 85%;
+    transform: skew(0deg, -10deg);
+    opacity: 0;
+    transition: all 0.5s ease;
+    visibility: hidden;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.shadow__text {
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Open Sans', serif;
+    letter-spacing: 0.02em;
+    margin-bottom: 4px;
+    font-weight: bold;
+    transform: skew(0deg, 10deg);
+}
+
+.shadow__link {
+    color: #fff;
+    text-decoration: none;
+    transform: skew(0deg, 10deg);
+}
+
+.shadow__link:hover {
+    color: #ffffff;
+    border-bottom: #ffffff 1px solid;
+    text-decoration: none;
+}
+
+
+/* Fourth section */
+
+.team-block {
+    background: #f1f2fd;
+    padding-top: 120px;
+    padding-bottom: 116px;
+}
+
+.team__img {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.team__title {
+    text-transform: none;
+    color: black;
+    margin-top: 24px;
+    margin-bottom: 8px;
+}
+
+.team__position {
+    color: #e84545;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+
+.team__text {
+    color: #6c7279;
+    margin-top: 21px;
+    margin-bottom: 25px; 
+}
+
+.networks__link {
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    align-items: center;
+    justify-content: center;
+    margin-right: 4px;
+    border: 1px solid #e8ecee;
+    transition: 1s;   
+}
+
+.networks__item:last-child {
+    margin-right: 0px;
+}
+
+
+/* Fiveth section */
+
+.creed-block {
+    background: #000000;
+}
+
+.creed__img {
+    background: url(../img/Respawn_Entertainment_logo.jpg) center center no-repeat;
+    background-size: 225%;
+    height: 500px; 
+
+}
+
+.creed__info {
+    background: #000;
+    padding-top: 133px;
+    padding-left: 55px;
+    padding-right: 55px;
+}
+
+.creed__text {
+    font-size: 32px;
+    font-style: italic;
+    color: #fff;
+    margin-bottom: 30px;
+    line-height: 1.18em;
+}
+
+
+/* Sixth section */
+
+.contacts {
+    padding-top: 90px;
+    padding-bottom: 100px;
+    text-align: center;
+}
+
+.contacts__titile {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.contacts__subtitile {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 7px;
+    margin-bottom: 36px;
+}
+
+.contacts__button {
+    font-size: 13px;
+    padding: 0.75rem 2rem;
+    border-radius: 2px;
+}
+
+/* Footer */
+
+.footer {
+    padding: 20px 0 25px;
+    background: #6c7279 url(../img/City.jpg);
+    background-position: left center;
+}
+
+.footer-block__title {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 13px;
+    text-align: center;
+}
+
+.footer-block__text {
+    color: #adaebb;
+    text-align: center; 
+}
+
+.footer-block_name {
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Media Queries */
+
+/* 992-1200px */
+@media screen and (max-width: 1200px) {
+    .header {
+        padding-top: 27px;
+        padding-bottom: 180px; 
+    }
+
+    .team:nth-child(-n+2) {
+        margin-bottom: 30px;
+    }
+
+    .creed__info {
+        padding-top: 83px;
+        padding-left: 55px;
+    }
+
+    .footer-block__info-special {
+        margin-top: 40px;
+    }
+}
+
+/* 768-992px */
+@media screen and (max-width: 992px) {
+    .header {
+        padding-top: 27px;
+        padding-bottom: 135px; 
+    }
+
+    .team-special {
+        margin-top: 30px;
+    }
+    
+    .features-special {
+        margin-top: 72px;
+    } 
+       
+    .creed__info {
+        padding-top: 43px;
+        padding-left: 55px;
+        padding-bottom: 43px;
+    }
+
+    .creed__img {
+        background: url(../img/Respawn_Entertainment_logo.jpg) center center no-repeat;
+        background-size: 220%;
+        height: 290px;
+    }
+
+
+}
+
+/* 576-768px */
+@media screen and (max-width: 768px) {
+
+
+    .features-block {
+        padding-top: 52px;
+        padding-bottom: 52px;
+    }
+
+    .features-small {
+        margin-top: 72px;
+    }
+
+    .gallery-block {
+    padding-bottom: 52px;
+    }
+
+    .creed__img {
+        height: 150px;
+    }
+
+    .team-block {
+        padding-top: 52px;
+        padding-bottom: 52px;
+    }
+
+}
+
+/* 320-576px */
+@media screen and (max-width: 576px) {
+    
+    .header {
+        padding-top: 27px;
+        padding-bottom: 55px; 
+    }
+
+    .button {
+        padding: 0.75rem 1rem;
+
+    }
+
+    .features-block {
+        padding-bottom: 90px;
+        padding-top: 90px;
+    }
+
+    .offer__text {
+        width: 95%;
+    }
+    
+
+    .offer__title {
+        margin-top: 18px;
+    }
+
+
+    .shadow__text {
+        font-size: 20px;
+    }
+
+    .creed__text {
+        font-size: 25px;
+    }
+
+    .footer-block__info-sm {
+        margin-top: 40px;
+    }
+
+}
+
